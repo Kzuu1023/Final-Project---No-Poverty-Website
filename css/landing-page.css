@@ -67,23 +67,23 @@ body {
 
 .hero__container {
     display: flex;
-    padding: 1.2rem;
+    /* padding: 1.2rem; */
     align-items: center;
     flex-direction: column;
 }
 
 .hero__container img {
-    max-width: 100%;
+    width: 100%;
     position: relative;
 }
 
 .hero__container h1 {
     position: absolute;
-    width: 90%;
-    bottom: 12rem; /* Adjust this to control the vertical placement */
-    left: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: var(--hero-font-size);
-    transform: translateX(-50%);
+    text-wrap: nowrap;
     color: white;
 }
 
@@ -99,6 +99,36 @@ body {
 }
 
 .hero__container .hero__text-container p {
-    max-width: 80%;
+    width: 60%;
     color: #f08633;
+}
+
+.feature__panel-container {
+    display: flex;
+    gap: 5rem;
+    margin: 3.5rem;
+}
+
+.feature__panel-container .feature__panel-item {
+    flex: 1;
+}
+
+.feature__panel-container .feature__panel-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature__panel-container .feature__panel-item h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.feature__panel-item .feature__panel-text {
+    max-width: 100%;
+}
+
+.feature__panel-container img {
+    width: 100%;
 }
