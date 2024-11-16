@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("'https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:300,100italic");
 /* .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -17,10 +18,13 @@
 
     --feature-panel-main-size: 1.5rem;
 
+    --quote-font-size: 3rem;
+
     --cta-h3-font-size: 30px;
     --cta-h3-color: #315f79;
 
     --cta-text-description: 18px;
+    --cta-text-description-color: #3f3f3f;
     --subscribe-btn-color: #f06833;
 }
 
@@ -164,14 +168,28 @@ body {
     font-size: var(--feature-panel-main-size);
 }
 
-.feature__panel-container img {
+.feature__panel-item img {
     width: 100%;
+}
+
+.quote__container {
+    display: flex;
+    justify-content: center;
+    font-family: italic;
+    text-align: center;
+    padding: 3.5rem;
+    font-size: var(--quote-font-size);
+}
+
+.quote__container span {
+    margin-top: 1.5rem;
+    float: right;
 }
 
 .cta-subscribe {
     display: flex;
-    margin: 5rem;
-    gap: 1.5rem;
+    margin: 3.5rem;
+    gap: 2.5rem;
 }
 
 .cta-subscribe img {
@@ -198,6 +216,7 @@ body {
 
 .cta__description p {
     font-size: var(--cta-text-description);
+    color: var(--cta-text-description-color);
     text-align: left;
     max-width: 80%;
     line-height: 24px;
@@ -212,8 +231,14 @@ body {
     font-size: 16px;
     min-height: 47px;
     padding: 6px 16px;
+    border: 1px solid #ccc;
     border-radius: 4px;
     margin: 0px 8px 14px 0px;
+}
+
+.cta__item form input:focus {
+    border-color: #0000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
 }
 
 form .first__row input {
@@ -229,5 +254,10 @@ form .second__row button {
     background-color: var(--subscribe-btn-color);
     color: #ffff;
     height: 2.8rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+form .second__row button:hover {
+    background-color: #ffa07a;
 }
