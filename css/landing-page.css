@@ -16,6 +16,12 @@
     --feature-panel-h2-color: #315f79;
 
     --feature-panel-main-size: 1.5rem;
+
+    --cta-h3-font-size: 30px;
+    --cta-h3-color: #315f79;
+
+    --cta-text-description: 18px;
+    --subscribe-btn-color: #f06833;
 }
 
 * {
@@ -82,7 +88,6 @@ body {
 
 .hero__container img {
     width: 100%;
-
     position: relative;
 }
 
@@ -141,6 +146,7 @@ body {
 }
 
 .feature__panel-container .feature__panel-item:first-child {
+    /*selecting the first child*/
     justify-content: center;
     height: 350px;
     overflow: hidden;
@@ -160,4 +166,68 @@ body {
 
 .feature__panel-container img {
     width: 100%;
+}
+
+.cta-subscribe {
+    display: flex;
+    margin: 5rem;
+    gap: 1.5rem;
+}
+
+.cta-subscribe img {
+    width: 100%;
+}
+
+.cta-subscribe .cta__item {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1.5rem;
+}
+
+.cta__item .cta__description h3 {
+    display: flex;
+    max-width: 80%;
+
+    margin-bottom: 1rem;
+    justify-content: center;
+    color: var(--cta-h3-color);
+    font-size: var(--cta-h3-font-size);
+    font-weight: bold;
+}
+
+.cta__description p {
+    font-size: var(--cta-text-description);
+    text-align: left;
+    max-width: 80%;
+    line-height: 24px;
+}
+
+.cta__item form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta__item form input {
+    font-size: 16px;
+    min-height: 47px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin: 0px 8px 14px 0px;
+}
+
+form .first__row input {
+    width: 45%;
+}
+
+form .second__row #email,
+form .second__row button {
+    width: 92%;
+}
+
+form .second__row button {
+    background-color: var(--subscribe-btn-color);
+    color: #ffff;
+    height: 2.8rem;
+    border-radius: 4px;
 }
