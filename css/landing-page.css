@@ -26,6 +26,9 @@
     --cta-text-description: 18px;
     --cta-text-description-color: #3f3f3f;
     --subscribe-btn-color: #f06833;
+
+    --footer-bg-color: #315f79;
+    --footer-icon-bg-color: #ffff;
 }
 
 * {
@@ -66,6 +69,11 @@ body {
     gap: 0.5rem;
 }
 
+.header__nav span {
+    font-size: 1.5rem;
+    color: #006400;
+}
+
 .header__nav .header__nav-list {
     display: flex;
     align-items: center;
@@ -73,8 +81,17 @@ body {
 }
 
 .header__nav button {
-    width: 6rem;
+    width: 7rem;
     height: 3.2rem;
+    color: #ffff;
+    background-color: rgb(243, 108, 52);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.header__nav button:hover {
+    background-color: #ffa07a;
+    transition: all 0.4s ease;
 }
 
 .hero {
@@ -146,6 +163,7 @@ body {
 
 .feature__panel-container .feature__panel-item {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -260,4 +278,52 @@ form .second__row button {
 
 form .second__row button:hover {
     background-color: #ffa07a;
+    transition: all 0.4s ease;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 1.5rem;
+}
+
+.footer .footer__item .social__links img {
+    max-width: 2%;
+    padding: 5px;
+    background-color: var(--footer-icon-bg-color);
+    border-radius: 35px;
+}
+
+.footer__item {
+    display: flex;
+    margin: 3.5rem;
+    height: 3 00px;
+}
+
+.social__links-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.social__links-container h4 {
+    color: white;
+}
+
+.social__links-container .social__links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social__links-container .footer__poverty {
+    display: flex;
+}
+
+.social__links-container .footer__poverty img {
+    width: 9%;
+}
+
+.social__links-container .footer__poverty a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
