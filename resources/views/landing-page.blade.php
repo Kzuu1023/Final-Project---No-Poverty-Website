@@ -4,14 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>No Poverty Website</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="../css/landing-page.css" />
+        <link rel="stylesheet" href="css/landing-page.css" />
     </head>
     <body>
         <header class="header">
@@ -44,7 +37,9 @@
                         </li>
                     </ul>
 
-                    <button class="header__donate-btn">Donate</button>
+                    <a href="donation.html"
+                        ><button class="header__donate-btn">Donate</button></a
+                    >
                 </div>
             </nav>
         </header>
@@ -152,7 +147,7 @@
                         </p>
                     </div>
 
-                    <form action="" method="">
+                    <form action="POST" method="">
                         <div class="first__row">
                             <input
                                 type="text"
