@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>No Poverty Website</title>
         <link rel="stylesheet" href="css/landing-page.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header class="header">
@@ -37,7 +38,7 @@
                         </li>
                     </ul>
 
-                    <a href="donation.html"
+                    <a href="/donation"
                         ><button class="header__donate-btn">Donate</button></a
                     >
                 </div>
@@ -147,7 +148,8 @@
                         </p>
                     </div>
 
-                    <form action="POST" method="">
+                    <form action="{{ route('landing-page.store') }}" method="POST">
+                    @csrf
                         <div class="first__row">
                             <input
                                 type="text"
@@ -173,6 +175,14 @@
                             />
 
                             <button>Subscribe Now</button>
+
+                            @if(session()->has('message'))
+                            <div class="alert-success-container" >
+                                <div class="alert alert-success" > 
+                                        {{ session()->get('message') }}
+                                </div>
+                            </div>
+                            @endif
                         </div>
                     </form>
                 </div>
@@ -241,7 +251,7 @@
                                 <h4>WAYS YOU CAN HELP</h4>
                                 <div class="program__links">
                                     <ul>
-                                        <li>Donate Any Amoung</li>
+                                        <li>Donate Any Amount</li>
                                         <li>Subscribe to stay up-to-date</li>
                                     </ul>
                                 </div>

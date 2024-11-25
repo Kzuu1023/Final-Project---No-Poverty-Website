@@ -74,17 +74,6 @@
                                 />
                             </div>
 
-                            <div class="date-container">
-                                <label for="date">Enter a date</label>
-                                <input
-                                    type="text"
-                                    id="date"
-                                    name="date"
-                                    placeholder="mm/dd/yy"
-                                    pattern="\d{2}/\d{2}/\d{2}"
-                                    required
-                                />
-                            </div>
 
                             <div class="message-container">
                                 <label for="message" class="message-label"
@@ -103,9 +92,15 @@
                             </div>
  
                             @if(session()->has('message'))
-                                <div class="alert alert-success">
-                                    {{ session()->get('message') }}
+                            <div class="alert-success-container" >
+                                <div class="alert alert-success"  
+                                       >
+                                        {{ session()->get('message') }}
+                                        <a href="/landing-page">
+                                            Go Back
+                                        </a>
                                 </div>
+                            </div>
                             @endif
                         </form>
                     </div>

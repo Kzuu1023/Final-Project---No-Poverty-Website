@@ -14,8 +14,6 @@ class DonationController extends Controller
 
         // dd($request->all());
 
-        
-
          $request->validate([
           'fname'  => 'required|string|max:255',
           'phone_number' => 'required|string|max:20',
@@ -24,8 +22,7 @@ class DonationController extends Controller
            
            ]);
   
-     
-
+    
 
       $donate = DonationUser::create([
         'fullname' => $request->fname,
@@ -61,7 +58,7 @@ class DonationController extends Controller
 
 
 
-      $greetings = "Thank you {$donate->fullname} for the donation amount of {$donate->donation_amount}";
+      $greetings = "Thank you {$donate->fullname} for the donation amount of ₱{$donate->donation_amount}";
 
 
 
@@ -70,7 +67,7 @@ class DonationController extends Controller
     //     'data' => $donate,
     //  ]);
 
-     return redirect()->back()->with('message',"This is Success Message");
+     return redirect()->back()->with('message',"$greetings");
 
      
       }

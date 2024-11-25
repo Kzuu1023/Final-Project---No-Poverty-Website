@@ -11,17 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('donation_users', function (Blueprint $table) {
-            $table->increments('id'); // Auto-incrementing primary key
-            $table->string('fullname');
-            $table->string('phone_number')->nullable();
+
+        Schema::create('subscriber_users', function (Blueprint $table) {
+            $table->increments('id'); 
+            $table->string('fname');
+            $table->string('lname');
             $table->string('email')->unique();
-            $table->decimal('donation_amount', 10, 2); // Precise donation amount
-            $table->text('message')->nullable();
             $table->timestamps();
         });
-
-       
     }
 
     /**
@@ -29,8 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
-        Schema::dropIfExists('donation_users');
-    
+        Schema::dropIfExists('subscriber_users');
     }
 };
