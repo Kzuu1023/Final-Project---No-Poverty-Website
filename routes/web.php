@@ -17,6 +17,10 @@ Route::get('/donation', function () {
     return view('donation'); // Matches resources/views/donation.blade.php
 });
 
+Route::get('/founder', function () {
+    return view('founder'); // Matches resources/views/donation.blade.php
+});
+
 
 Route::post('/landing-page', [SubscribeController::class, 'store'])->name('landing-page.store'); 
 Route::post('/donation', [DonationController::class, 'store'])->name('donation.store'); 

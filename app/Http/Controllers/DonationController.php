@@ -22,8 +22,7 @@ class DonationController extends Controller
            
            ]);
   
-    
-
+  
       $donate = DonationUser::create([
         'fullname' => $request->fname,
         'phone_number' => $request->phone_number,
@@ -32,40 +31,9 @@ class DonationController extends Controller
         'message' => $request->message
     ]);
       
-            
-    
-  
-  
-      
-      //   $donate = [
-      //     'fullname' => $fullname,
-      //     'phone' => $phone,
-      //     'email' => $email,
-      //     'donation' => $donation,
-      //     'date' => $date,
-      //     'message' => $msg
-      // ];
-
-
-
-    
-
-      // Using foreach to print each item
-      // foreach ($donate as $key => $value) {
-      //     echo "$key: $value<br>"; // This will print key and value for each item in the array
         
-      //  }
-
-
-
       $greetings = "Thank you {$donate->fullname} for the donation amount of ₱{$donate->donation_amount}";
 
-
-
-    //   return response()->json([
-    //     'message' => $greetings,
-    //     'data' => $donate,
-    //  ]);
 
      return redirect()->back()->with('message',"$greetings");
 

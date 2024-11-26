@@ -6,6 +6,7 @@
         <title>No Poverty Website</title>
         <link rel="stylesheet" href="css/landing-page.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
@@ -24,13 +25,21 @@
                 <div class="header__second-row">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link"> About Us </a>
+                            <a href="#" class="header__nav-link"> About Us<i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown_menu-item"><a href="/founder">Meet Our Founder</a></li>
+                                    <li class="dropdown_menu-item"><a href="/goals.blade.php">Our Goals</a></li>
+                                    <li class="dropdown_menu-item"><a href="/transparency.blade.php">Transparency</a></li>
+                                </ul>
                         </li>
 
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Our Programs</a
-                            >
+                            <a href="#" class="header__nav-link"> Our Programs<i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown_menu-item"><a href="/founder.blade.php">Meet Our Founder</a></li>
+                                    <li class="dropdown_menu-item"><a href="/goals.blade.php">Our Goals</a></li>
+                                    <li class="dropdown_menu-item"><a href="/transparency.blade.php">Transparency</a></li>
+                                </ul>
                         </li>
 
                         <li class="header__nav-item">
