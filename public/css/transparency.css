@@ -32,7 +32,7 @@
     --footer-bg-color: #315f79;
     --footer-icon-bg-color: #ffff;
 
-    --founder-h1-bg-color: #315f79;
+    --transparency-headings-main-color: #f08633;
 }
 
 * {
@@ -144,71 +144,67 @@ body {
     transition: all 0.4s ease;
 }
 
-.founder__container {
-    margin: 2.5rem;
+.viewport {
+    background-color: #f4f5f5;
 }
-
-.founder__container .founder__item {
+.transparency__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4.5rem;
-}
-
-.founder__item h1 {
-    font-size: 2.3rem;
-    color: var(--founder-h1-bg-color);
-}
-
-.founder__item .founder {
-    display: flex;
-    flex-direction: column;
-    gap: 4.5rem;
-    margin-bottom: 4.5rem;
-}
-
-.founder__item .founder img {
-    max-width: 20.44rem;
-    max-height: 20.44rem;
-    border-radius: 50%;
-}
-
-.founder .founder__first-row,
-.founder .founder__second-row,
-.founder .founder__third-row {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-}
-
-.founder__first-row .founder__information,
-.founder__second-row .founder__information,
-.founder__third-row .founder__information {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.founder__container .text__description {
-    text-align: center;
-    line-height: 1.4rem;
     font-family: "Nunito", sans-serif;
-    font-weight: 600;
+    padding: 4rem 7rem 4rem 7rem;
+    gap: 2rem;
 }
 
-.founder__container .text__description h2 {
-    font-size: 2.3rem;
-    color: var(--founder-h1-bg-color);
-    margin-block: 2rem;
+.transparency__container .transparency__item-first-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparency__container .transparency__item-first-row h1 {
+    max-width: 50%;
+    color: var(--transparency-headings-main-color);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.transparency__container .transparency__item-first-row p {
+    max-width: 96%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.transparency__container .transparency__item-second-row {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    font-family: "Nunito", sans-serif;
+    gap: 2rem;
+}
+
+.transparency__container .transparency__item-second-row h2 {
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.transparency__container .transparency__item-second-row p {
+    max-width: 96%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
 }
 
 .footer {
     color: #0000;
     background-color: var(--footer-bg-color);
     height: 300px;
-    margin-top: 6rem;
+    padding-top: 6rem;
     padding: 5rem;
 }
 

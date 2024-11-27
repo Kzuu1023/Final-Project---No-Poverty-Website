@@ -29,16 +29,16 @@
                                 <ul class="dropdown-menu">
                                     <li class="dropdown_menu-item"><a href="/founder">Meet Our Founder</a></li>
                                     <li class="dropdown_menu-item"><a href="/goals.blade.php">Our Goals</a></li>
-                                    <li class="dropdown_menu-item"><a href="/transparency.blade.php">Transparency</a></li>
+                                    <li class="dropdown_menu-item"><a href="/transparency">Transparency</a></li>
                                 </ul>
                         </li>
 
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link"> Our Programs<i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown_menu-item"><a href="/founder.blade.php">Meet Our Founder</a></li>
-                                    <li class="dropdown_menu-item"><a href="/goals.blade.php">Our Goals</a></li>
-                                    <li class="dropdown_menu-item"><a href="/transparency.blade.php">Transparency</a></li>
+                                    <li class="dropdown_menu-item"><a href="/healthy-meals">Healthy Meals for Families</a></li>
+                                    <li class="dropdown_menu-item"><a href="/school">School for Kids</a></li>
+                                    <li class="dropdown_menu-item"><a href="/holiday">Holiday Warmth Drive: Share the Joy</a></li>
                                 </ul>
                         </li>
 

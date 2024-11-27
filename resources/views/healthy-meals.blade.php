@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/transparency.css" />
+  <link rel="stylesheet" href="css/healthy_meals.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  <title>Transparency - Poverty Fighters</title>
-
+  <title>Healthy Meals for Families - Poverty Fighters</title>
 </head>
 <body>
 <header class="header">
@@ -29,7 +28,7 @@
                             <a href="#" class="header__nav-link"> About Us<i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown_menu-item"><a href="/founder">Meet Our Founder</a></li>
-                                    <li class="dropdown_menu-item"><a href="/goals">Our Goals</a></li>
+                                    <li class="dropdown_menu-item"><a href="/goals.blade.php">Our Goals</a></li>
                                     <li class="dropdown_menu-item"><a href="/transparency">Transparency</a></li>
                                 </ul>
                         </li>
@@ -55,26 +54,23 @@
             </nav>
         </header>
 
-       <main class="viewport">
-          <section class="transparency__container">
-              <div class="transparency__item-first-row">
-                <h1>OUR COMMITMENT TO TRANSPARENCY</h1>
-                <p>At Hunger Free Philippines, we are committed to ensuring that our supporters and patrons are well-informed about our organization and our mission to eliminate hunger and poverty. We strive to provide transparent and easily accessible information to all those who support and join us in our fight against hunger.</p>
-              </div>
-
-              <div class="transparency__item-second-row">
-                  <div class="transparency__second-row-item">
-                    <h2>Verified Non-Profit Status</h2>
-                    <p>We are proud to be a verified non-profit organization. Our EIN (Employer Identification Number) is 47-1996853, ensuring full legal and tax status transparency.</p>
-                 </div>
-
-                 <div class="transparency__second-row-item">
-                    <h2>Data Privacy</h2>
-                    <p>Our Privacy Policy outlines how we collect, use, and safeguard your personal information to ensure transparency and build trust. We are committed to protecting your privacy and complying with all applicable data protection laws.</p>
-                 </div>
-              </div>
+        <main class="viewport">
+          <section class="healthy__meals-container">
+               <h1>Healthy Meals for Families</h1>
+                  <div class="healthy__meals-item">
+                        <div class="healthy__img-container">
+                              <img src="../images/healthy-img.jpg" alt="">
+                        </div>
+                          <div class="healthy__meals-text-description">
+                            <h2>One Less Thing To Worry About</h2>
+                                <p>We celebrate the joy of family through our “Healthy Meals for Families” program. We understand that preparing nutritious meals every day can be a challenge amidst busy schedules, diverse preferences, and the rising cost of living. Families often strive to provide the best for their loved ones, balancing health and taste in every bite.
+                                    Your support ensures that families can enjoy wholesome, delicious meals together, fostering stronger bonds and healthier lifestyles, one plate at a time.</p>
+                          </div>
+                   </div>
           </section>
-       </main>
+        </main>
+
+
 
         <footer class="footer">
                 <div class="footer__item">

@@ -18,7 +18,23 @@ Route::get('/donation', function () {
 });
 
 Route::get('/founder', function () {
-    return view('founder'); // Matches resources/views/donation.blade.php
+    return view('founder'); // Matches resources/views/founder.blade.php
+});
+
+Route::get('/transparency', function () {
+    return view('transparency'); // Matches resources/views/transparency.blade.php
+});
+
+Route::get('/healthy-meals', function () {
+    return view('healthy-meals'); // Matches resources/views/transparency.blade.php
+});
+
+Route::get('/school', function () {
+    return view('school'); // Matches resources/views/transparency.blade.php
+});
+
+Route::get('/holiday', function () {
+    return view('holiday'); // Matches resources/views/transparency.blade.php
 });
 
 
