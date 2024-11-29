@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: "Nunito", sans-serif;
+}
+
+.admin__login-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%; /* Position at the middle vertically */
+    left: 50%; /* Position at the middle horizontally */
+    transform: translate(-50%, -50%);
+}
+
+.admin__login-container .form__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 25rem;
+    background-color: #ffff;
+    border-radius: 1rem;
+}
+
+.form__container form h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.form__container form label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.form__container form input {
+    width: 20rem;
+    min-height: 3.5rem;
+    font-size: 0.75rem;
+    padding: 0.375rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin: 0px 8px 12px 0px;
+}
+
+.form__container form .button__container {
+    display: flex;
+    justify-content: center;
+}
+
+.form__container form button {
+    width: 50%;
+    font-size: 16px;
+    min-height: 47px;
+    color: #ffff;
+    padding: 6px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1rem;
+}

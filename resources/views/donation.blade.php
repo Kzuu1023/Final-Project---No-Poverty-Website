@@ -96,7 +96,7 @@
                                 <div class="alert alert-success"  
                                        >
                                         {{ session()->get('message') }}
-                                        <a href="/landing-page">
+                                        <a href="/">
                                             Go Back
                                         </a>
                                 </div>
